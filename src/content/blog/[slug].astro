@@ -1,0 +1,38 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+type Props = {
+  post: CollectionEntry<"blog">;
+};
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{post.data.title} – Nick</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <header>
+          <h1>{post.data.title}</h1>
+          {post.data.pubDate && (
+            <p>{post.data.pubDate.toLocaleDateString()}</p>
+          )}
+        </header>
+        <Content />
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog – Nick</title>
+  </head>
+  <body>
+    <main>
+      <h1>Blog</h1>
+      <ul>
+        {sortedPosts.map(({ id, data }) => (
+          <li>
+            <a href={`/blog/${id}/`}>{data.title}</a>
+            {data.pubDate && (
+              <span> – {data.pubDate.toLocaleDateString()}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
