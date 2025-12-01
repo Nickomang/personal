@@ -15,13 +15,14 @@ const sortedPosts = posts.sort(
   <body>
     <main>
       <h1>Blog</h1>
+
+      {sortedPosts.length === 0 && <p>No posts yet.</p>}
+
       <ul>
-        {sortedPosts.map(({ id, data }) => (
+        {sortedPosts.map((post) => (
           <li>
-            <a href={`/blog/${id}/`}>{data.title}</a>
-            {data.pubDate && (
-              <span> – {data.pubDate.toLocaleDateString()}</span>
-            )}
+            <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+            <span> – {post.data.pubDate}</span>
           </li>
         ))}
       </ul>

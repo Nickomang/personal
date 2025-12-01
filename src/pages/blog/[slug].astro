@@ -28,7 +28,7 @@ const { Content } = await post.render();
         <header>
           <h1>{post.data.title}</h1>
           {post.data.pubDate && (
-            <p>{post.data.pubDate.toLocaleDateString()}</p>
+            <p>{post.data.pubDate}</p>
           )}
         </header>
         <Content />
