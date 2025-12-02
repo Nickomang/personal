@@ -1,0 +1,41 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const title = post.data.title;
+const description =
+  post.data.description ?? "Blog post on Nick’s personal site.";
+const pubDate = post.data.pubDate;
+const tags = post.data.tags ?? [];
+---
+
+<BaseLayout title={`${title} – Nick`} description={description}>
+  <article class="blog-post prose">
+    <header class="blog-post__header">
+      <h1 class="blog-post__title">{title}</h1>
+      {pubDate && (
+        <p class="blog-post__meta">
+          {pubDate}
+        </p>
+      )}
+      {tags.length > 0 && (
+        <ul class="blog-post__tags">
+          {tags.map((tag) => (
+            <li class="blog-post__tag">{tag}</li>
+          ))}
+        </ul>
+      )}
+    </header>
+
+    <section class="blog-post__content">
+      <Content />
+    </section>
+  </article>
+</BaseLayout>

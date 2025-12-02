@@ -1,19 +1,16 @@
 ---
-// src/pages/index.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Nick – Home</title>
-  </head>
-  <body>
-    <main>
-      <h1>Nick</h1>
-      <p>Personal site under construction.</p>
-      <nav>
-        <a href="/blog">Blog</a>
-      </nav>
-    </main>
-  </body>
-</html>
+<BaseLayout title="Nick – Home" description="Nick’s personal site.">
+  <section>
+    <h1>Hello.</h1>
+    <p>
+      This is a placeholder home page for my personal site. I’ll fill this with
+      a proper intro and links soon.
+    </p>
+    <p>
+      In the meantime, you can read the <a href="/blog">blog</a>.
+    </p>
+  </section>
+</BaseLayout>

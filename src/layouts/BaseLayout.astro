@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Nick",
+  description = "Nick’s personal site and blog.",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Basic social sharing defaults -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="/" class="site-brand">Nick</a>
+        <nav class="site-nav">
+          <a href="/" class="site-nav__link">Home</a>
+          <a href="/blog" class="site-nav__link">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container site-main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© {new Date().getFullYear()} Nick</p>
+      </div>
+    </footer>
+  </body>
+</html>

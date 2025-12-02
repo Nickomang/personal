@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const posts = await getCollection("blog");
 const sortedPosts = posts.sort(
@@ -7,25 +8,25 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Blog – Nick</title>
-  </head>
-  <body>
-    <main>
-      <h1>Blog</h1>
+<BaseLayout title="Blog – Nick" description="Nick’s notes and posts.">
+  <section>
+    <h1>Blog</h1>
 
-      {sortedPosts.length === 0 && <p>No posts yet.</p>}
+    {sortedPosts.length === 0 && <p>No posts yet.</p>}
 
-      <ul>
+    {sortedPosts.length > 0 && (
+      <ul class="blog-list">
         {sortedPosts.map((post) => (
-          <li>
-            <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-            <span> – {post.data.pubDate}</span>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href={`/blog/${post.slug}/`}>
+              <h2 class="blog-list__title">{post.data.title}</h2>
+              <p class="blog-list__meta">
+                {post.data.pubDate}
+              </p>
+            </a>
           </li>
         ))}
       </ul>
-    </main>
-  </body>
-</html>
+    )}
+  </section>
+</BaseLayout>
