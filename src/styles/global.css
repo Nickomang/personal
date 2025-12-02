@@ -1,5 +1,7 @@
 @import "./tokens.css";
 
+/* Reset-ish */
+
 *,
 *::before,
 *::after {
@@ -13,11 +15,13 @@ body {
 }
 
 body {
-  background: radial-gradient(circle at top, #111827 0, #020617 55%);
+  background-color: #1b1d1b; 
   color: var(--color-fg);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Links */
 
 a {
   color: var(--color-accent);
@@ -37,27 +41,27 @@ a:hover {
   padding: 0 var(--space-md);
 }
 
+/* Header */
+
 .site-header {
-  border-bottom: 1px solid var(--color-border-subtle);
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), transparent);
-  backdrop-filter: blur(10px);
+  background: rgba(8, 8, 8, 0.9);
+  backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 10;
 }
 
 .site-header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3.5rem;
+  height: 4rem;
 }
 
 .site-brand {
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.9rem;
   color: var(--color-fg);
 }
 
@@ -76,6 +80,8 @@ a:hover {
   text-decoration: none;
 }
 
+/* Main + footer */
+
 .site-main {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
@@ -83,7 +89,6 @@ a:hover {
 }
 
 .site-footer {
-  border-top: 1px solid var(--color-border-subtle);
   padding: var(--space-md) 0 var(--space-lg);
   color: var(--color-fg-muted);
   font-size: 0.85rem;
@@ -93,15 +98,14 @@ a:hover {
   text-align: center;
 }
 
-/* Home / generic content */
+/* Generic content */
 
-main > h1,
-main > h2,
-main > h3 {
+main > section > h1,
+main > h1 {
   margin-top: 0;
 }
 
-/* Blog list */
+/* Blog list – no cards, no borders */
 
 .blog-list {
   list-style: none;
@@ -110,21 +114,17 @@ main > h3 {
 }
 
 .blog-list__item + .blog-list__item {
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
 }
 
 .blog-list__link {
   display: block;
-  padding: var(--space-md);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border-subtle);
-  background: radial-gradient(circle at top left, #111827, #020617);
-  box-shadow: var(--shadow-soft);
+  padding: var(--space-sm) 0;
 }
 
 .blog-list__title {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 2.1rem;
 }
 
 .blog-list__meta {
@@ -133,14 +133,10 @@ main > h3 {
   color: var(--color-fg-muted);
 }
 
-/* Blog post */
+/* Blog post – clean, text-first */
 
 .blog-post {
-  padding: var(--space-lg);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border-subtle);
-  background: radial-gradient(circle at top left, #111827, #020617);
-  box-shadow: var(--shadow-soft);
+  padding: 0; /* no box, just flow within the layout */
 }
 
 .blog-post__header {
@@ -149,7 +145,7 @@ main > h3 {
 
 .blog-post__title {
   margin: 0 0 var(--space-xs);
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 
 .blog-post__meta {
@@ -171,13 +167,13 @@ main > h3 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 0.1rem 0.5rem;
+  padding: 0.05rem 0.45rem;
   border-radius: 999px;
-  border: 1px solid var(--color-border-subtle);
   background: var(--color-accent-soft);
+  color: var(--color-fg-muted);
 }
 
-/* Prose / typography */
+/* Prose / typography – news-y serif */
 
 .prose {
   line-height: 1.7;
@@ -193,7 +189,7 @@ main > h3 {
 .prose h3,
 .prose h4 {
   font-weight: 600;
-  margin: 1.5em 0 0.5em;
+  margin: 1.8em 0 0.7em;
 }
 
 .prose h1 {
@@ -210,34 +206,31 @@ main > h3 {
 
 .prose ul,
 .prose ol {
-  margin: 0 0 1em 1.25em;
+  margin: 0 0 1em 1.4em;
   padding: 0;
 }
+
+/* Inline code & blocks */
 
 .prose code {
   font-family: var(--font-mono);
   font-size: 0.9em;
-  background: rgba(15, 23, 42, 0.9);
-  padding: 0.1em 0.35em;
-  border-radius: var(--radius-sm);
+  background: #202020;
+  padding: 0.05em 0.35em;
 }
 
 .prose pre {
   font-family: var(--font-mono);
-  padding: var(--space-md);
-  border-radius: var(--radius-md);
-  background: #020617;
-  border: 1px solid var(--color-border-subtle);
+  padding: var(--space-sm);
+  border-radius: 0;
+  background: #121212;
   overflow-x: auto;
+  margin-bottom: 1.2em;
 }
 
-/* Mobile tweaks */
+/* Mobile */
 
 @media (max-width: 640px) {
-  .blog-post {
-    padding: var(--space-md);
-  }
-
   .site-main {
     padding-top: var(--space-lg);
     padding-bottom: var(--space-lg);

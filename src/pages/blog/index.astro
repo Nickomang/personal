@@ -8,9 +8,8 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<BaseLayout title="Blog – Nick" description="Nick’s notes and posts.">
+<BaseLayout title="Blog" description="Nick’s notes and posts.">
   <section>
-    <h1>Blog</h1>
 
     {sortedPosts.length === 0 && <p>No posts yet.</p>}
 
