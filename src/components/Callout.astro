@@ -1,0 +1,31 @@
+---
+const { title = "Note" } = Astro.props;
+---
+
+<div class="callout">
+  <strong class="callout__title">{title}</strong>
+  <div class="callout__body">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .callout {
+    margin: 1.4rem 0;
+    padding: 0.9rem 1rem;
+    background: var(--color-accent-soft);
+  }
+
+  .callout__title {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.35rem;
+    color: var(--color-fg-muted);
+  }
+
+  .callout__body {
+    font-size: 0.95rem;
+  }
+</style>
