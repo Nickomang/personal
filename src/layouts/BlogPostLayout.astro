@@ -20,7 +20,7 @@ const tags = post.data.tags ?? [];
 const mdxComponents = { Callout };
 ---
 
-<BaseLayout title={`${title} – Nick`} description={description}>
+<BaseLayout title={`${title}`} description={description}>
   <article class="blog-post prose">
     <header class="blog-post__header">
       <h1 class="blog-post__title">{title}</h1>
@@ -32,10 +32,12 @@ const mdxComponents = { Callout };
       {tags.length > 0 && (
         <ul class="blog-post__tags">
           {tags.map((tag) => (
-            <li class="blog-post__tag">{tag}</li>
+            <li class="blog-post__tag">
+              <a href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>
+            </li>
           ))}
         </ul>
-      )}
+      )} 
     </header>
 
     <section class="blog-post__content">

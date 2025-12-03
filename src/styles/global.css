@@ -228,6 +228,35 @@ main > h1 {
   margin-bottom: 1.2em;
 }
 
+/* Tags */
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-lg) 0 0;
+}
+
+.tag-list__item + .tag-list__item {
+  margin-top: var(--space-xs);
+}
+
+.tag-list__link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.1rem 0;
+}
+
+.tag-list__name {
+  text-transform: none;
+}
+
+.tag-list__count {
+  font-size: 0.8rem;
+  color: var(--color-fg-muted);
+}
+
+
 /* Mobile */
 
 @media (max-width: 640px) {
