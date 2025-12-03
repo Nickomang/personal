@@ -30,13 +30,16 @@ const mdxComponents = { Callout };
         </p>
       )}
       {tags.length > 0 && (
-        <ul class="blog-post__tags">
+        <div class="blog-post__tags">
           {tags.map((tag) => (
-            <li class="blog-post__tag">
-              <a href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>
-            </li>
+            <a
+              href={`/tags/${encodeURIComponent(tag)}/`}
+              class="tag-pill"
+            >
+              {tag}
+            </a>
           ))}
-        </ul>
+        </div>
       )} 
     </header>
 

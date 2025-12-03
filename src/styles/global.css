@@ -117,6 +117,10 @@ main > h1 {
   margin-top: var(--space-sm);
 }
 
+.blog-list__item {
+  margin-left: 0.9rem;
+}
+
 .blog-list__link {
   display: block;
   padding: var(--space-sm) 0;
@@ -154,26 +158,7 @@ main > h1 {
   font-size: 0.9rem;
 }
 
-.blog-post__tags {
-  list-style: none;
-  padding: 0;
-  margin: var(--space-sm) 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-}
-
-.blog-post__tag {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.05rem 0.45rem;
-  border-radius: 999px;
-  background: var(--color-accent-soft);
-  color: var(--color-fg-muted);
-}
-
-/* Prose / typography – news-y serif */
+/* Prose / typography */
 
 .prose {
   line-height: 1.7;
@@ -256,6 +241,77 @@ main > h1 {
   color: var(--color-fg-muted);
 }
 
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-lg) 0 0;
+}
+
+.blog-list__item + .blog-list__item {
+  margin-top: var(--space-md);
+}
+
+.blog-list__title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.blog-list__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-list__title a:hover {
+  text-decoration: underline;
+}
+
+/* Date + tags inline */
+
+.blog-list__meta {
+  margin-top: var(--space-xs);
+  font-size: 0.85rem;
+  color: var(--color-fg-muted);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.blog-list__date {
+  /* first item; no extra styling needed */
+}
+
+.blog-list__tag-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Soft pill tags – minimal, no borders */
+
+.tag-pill {
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-fg-muted);
+  font-size: 0.8rem;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.tag-pill:hover {
+  background: rgba(58, 191, 107, 0.25);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.blog-post__tags {
+  margin-top: var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
 
 /* Mobile */
 

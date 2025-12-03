@@ -10,22 +10,43 @@ const sortedPosts = posts.sort(
 
 <BaseLayout title="Blog" description="Nick’s notes and posts.">
   <section>
+    <h1>Blog</h1>
 
     {sortedPosts.length === 0 && <p>No posts yet.</p>}
 
     {sortedPosts.length > 0 && (
       <ul class="blog-list">
-        {sortedPosts.map((post) => (
-          <li class="blog-list__item">
-            <a class="blog-list__link" href={`/blog/${post.slug}/`}>
-              <h2 class="blog-list__title">{post.data.title}</h2>
+        {sortedPosts.map((post) => {
+          const tags = post.data.tags ?? [];
+          return (
+            <li class="blog-list__item">
+              <h2 class="blog-list__title">
+                <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+              </h2>
+
               <p class="blog-list__meta">
-                {post.data.pubDate}
+                <span class="blog-list__date">
+                  {post.data.pubDate}
+                </span>
+
+                {tags.length > 0 && (
+                  <span class="blog-list__tag-row">
+                    {tags.map((tag) => (
+                      <a
+                        href={`/tags/${encodeURIComponent(tag)}/`}
+                        class="tag-pill"
+                      >
+                        {tag}
+                      </a>
+                    ))}
+                  </span>
+                )}
               </p>
-            </a>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ul>
     )}
   </section>
 </BaseLayout>
+
