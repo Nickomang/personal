@@ -1,0 +1,14 @@
+Item Class: Belts
+Rarity: Magic
+Azure Plate Belt of the Whelpling
+--------
+Requires: Level 24
+--------
+Item Level: 73
+--------
++138 to Armour (implicit)
+Has 1 Charm Slot (implicit)
+--------
++31 to maximum Mana
++7% to Fire Resistance
+

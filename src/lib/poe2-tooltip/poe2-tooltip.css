@@ -1,0 +1,319 @@
+/* src/lib/poe2-tooltip/poe2-tooltip.css */
+
+@font-face {
+  font-family: "Fontin";
+  src: url("/fonts/fontin/Fontin-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fontin";
+  src: url("/fonts/fontin/Fontin-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fontin";
+  src: url("/fonts/fontin/Fontin-Italic.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* =========
+   Core frame
+   ========= */
+
+.poe2-tooltip {
+  width: 392px;
+  max-width: 100%;
+
+  padding: 10px 12px 12px;
+  border-radius: 10px;
+
+  /* PoE-ish dark panel */
+  background:
+    radial-gradient(120% 120% at 50% 0%, rgba(90, 70, 30, 0.10), rgba(0, 0, 0, 0) 60%),
+    linear-gradient(180deg, rgba(18, 16, 14, 0.98), rgba(10, 9, 8, 0.96));
+
+  /* Bevel + inner glow */
+  border: 1px solid rgba(255, 220, 140, 0.18);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.55);
+
+  /* IMPORTANT: ensure text is visible even if site theme sets dark text */
+
+  color: rgba(210, 210, 210, 0.88);
+
+
+  /* Dense “tooltip” type feel */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.22;
+
+  /* Subtle crispness */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+
+  /* Font */
+  font-family: "Fontin", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  text-align: center;
+
+  margin-bottom: 1.2em;
+}
+
+/* If your global CSS applies weird things to all divs/spans, this helps */
+.poe2-tooltip * {
+  box-sizing: border-box;
+}
+
+.poe2-num {
+  color: rgba(245, 245, 245, 1);
+  font-weight: 700;
+}
+
+.poe2-implicits {
+  margin-bottom: 4px;
+}
+
+.poe2-mod {
+  letter-spacing: 0.01em;
+}
+
+/* Meta line: Item Class • Item Level */
+.poe2-meta-line {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+  margin: 2px 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.85);
+}
+
+.poe2-dot {
+  display: inline-block;
+  margin: 0 8px;
+  opacity: 0.55;
+}
+
+/* Enchant + Rune share blue */
+.poe2-mod-special {
+  color: rgba(185, 240, 255, 0.92);
+}
+
+/* Desecrated becomes green */
+.poe2-mod-desecrated {
+  position: relative;
+  color: rgba(185, 255, 170, 0.95);
+
+  /* Slight emphasis */
+  font-weight: 500;
+
+  /* Ensure the glow sits behind text */
+  z-index: 0;
+}
+
+/* Horizontal edge glow */
+.poe2-mod-desecrated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  /* Horizontal gradient from edges inward */
+  background: #61852c;
+  background: linear-gradient(90deg,rgba(97, 133, 44, 0.37) 0%, rgba(177, 212, 125, 0.23) 4%, rgba(255, 255, 255, 0) 22%, rgba(217, 234, 192, 0) 78%, rgba(177, 212, 125, 0.23) 96%, rgba(97, 133, 44, 0.31) 100%);
+  /* Soft vertical falloff */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 30%,
+    black 70%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+}
+
+/* Mutated mods: red */
+.poe2-mod-mutated {
+  color: rgba(255, 120, 120, 0.95);
+}
+
+/* Flavour text: bottom, italic, unique orange */
+.poe2-flavour {
+  text-align: center;
+  margin-top: 2px;
+}
+
+.poe2-flavour-line {
+  font-style: italic;
+  color: rgba(200, 140, 85, 0.98); /* same “unique orange” family */
+  text-shadow: 0 1px 0 rgba(0,0,0,0.85);
+  margin: 2px 0;
+}
+
+/* =========
+   Header
+   ========= */
+
+.poe2-item-class {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.poe2-header {
+  text-align: center;
+  padding: 2px 4px 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+}
+
+.poe2-rarity-line {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.poe2-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 2px;
+}
+
+.poe2-base {
+  font-size: 13px;
+  opacity: 0.92;
+}
+
+/* =========
+   Dividers (PoE style bars)
+   ========= */
+
+.poe2-divider {
+  height: 1px;
+  margin: 10px 0;
+  background:
+    linear-gradient(90deg,
+      rgba(0, 0, 0, 0),
+      rgba(255, 230, 160, 0.12),
+      rgba(255, 230, 160, 0.18),
+      rgba(255, 230, 160, 0.12),
+      rgba(0, 0, 0, 0)
+    );
+}
+
+/* =========
+   Body sections
+   ========= */
+
+.poe2-section-title {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  opacity: 0.55;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+.poe2-line {
+  margin: 2px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+}
+
+.poe2-mod {
+  margin: 2px 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+}
+
+/* Numbers pop like PoE: brighter + slightly bolder */
+.poe2-num {
+  color: rgba(245, 245, 245, 0.98);
+  font-weight: 600;
+}
+
+/* Parenthetical tags look dimmer/secondary */
+.poe2-tag {
+  color: rgba(200, 200, 200, 0.65);
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+/* =========
+   Mod kind coloring (subtle, not neon)
+   ========= */
+
+.poe2-mod-implicit {
+  color: rgba(230, 215, 160, 0.95);
+}
+
+/* =========
+   Footer flags
+   ========= */
+
+.poe2-footer-flag {
+  margin-top: 6px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: rgba(255, 95, 95, 0.98);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85);
+}
+
+/* =========
+   Rarity colors (classic PoE mapping)
+   =========
+   White/Blue/Yellow/Orange are the common in-game mapping. :contentReference[oaicite:1]{index=1}
+*/
+
+.poe2-rarity-normal .poe2-name,
+.poe2-rarity-normal .poe2-base {
+  color: rgba(235, 235, 235, 0.98);
+}
+
+.poe2-rarity-magic .poe2-name,
+.poe2-rarity-magic .poe2-base {
+  color: rgba(120, 165, 255, 0.98);
+}
+
+.poe2-rarity-rare .poe2-name,
+.poe2-rarity-rare .poe2-base {
+  color: rgba(245, 220, 120, 0.98);
+}
+
+.poe2-rarity-unique .poe2-name,
+.poe2-rarity-unique .poe2-base {
+  color: rgba(200, 140, 85, 0.98);
+}
+
+.poe2-rarity-gem .poe2-name,
+.poe2-rarity-gem .poe2-base {
+  color: rgba(110, 230, 180, 0.98);
+}
+
+.poe2-rarity-currency .poe2-name,
+.poe2-rarity-currency .poe2-base {
+  color: rgba(220, 215, 130, 0.98);
+}
+
+.poe2-rarity-quest .poe2-name,
+.poe2-rarity-quest .poe2-base {
+  color: rgba(255, 155, 155, 0.98);
+}
+
+/* Debug */
+.poe2-debug {
+  font-size: 12px;
+  opacity: 0.9;
+  overflow: auto;
+  margin: 0;
+}

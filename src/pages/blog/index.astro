@@ -4,11 +4,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const posts = await getCollection("blog");
 const sortedPosts = posts.sort(
-  (a, b) => b.data.pubDate - a.data.pubDate
+  (a, b) => a.data.pubDate - b.data.pubDate
 );
+
 ---
 
-<BaseLayout title="Blog" description="Nick’s notes and posts.">
+<BaseLayout title="Blog">
   <section>
     <h1>Blog</h1>
 

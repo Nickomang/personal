@@ -1,0 +1,19 @@
+Item Class: Rings
+Rarity: Rare
+Fate Grasp
+Amethyst Ring
+--------
+Quality (Physical Modifiers): +20% (augmented)
+--------
+Requires: Level 54
+--------
+Item Level: 76
+--------
++11% to Chaos Resistance (implicit)
+--------
+Adds 13 to 21 Physical Damage to Attacks
+Adds 21 to 33 Fire damage to Attacks
+27% increased Rarity of Items found
++30 to Strength
++23% to Chaos Resistance
+

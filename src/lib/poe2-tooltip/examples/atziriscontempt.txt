@@ -1,0 +1,38 @@
+Item Class: Spears
+Rarity: Unique
+Atziri's Contempt
+Pronged Spear
+--------
+Quality: +20% (augmented)
+Physical Damage: 75-223 (augmented)
+Elemental Damage: 111-182 (fire), 11-16 (cold), 1-198 (lightning)
+Critical Hit Chance: 5.00%
+Attacks per Second: 1.75 (augmented)
+--------
+Requires: Level 84, 46 Str, 115 Dex
+--------
+Sockets: S S 
+--------
+Item Level: 83
+--------
+Adds 11 to 16 Cold Damage (enchant)
+--------
+Adds 23 to 34 Fire Damage (rune)
+Gain 5% of Damage as Extra Damage of all Elements (rune)
+--------
+Grants Skill: Spear Throw
+Grants Skill: Level 19 Shattering Spite
+--------
+109% increased Physical Damage
+Adds 88 to 148 Fire Damage
+Adds 1 to 198 Lightning Damage
+13% increased Attack Speed
+62% increased Presence Area of Effect
+Spear Skills inflict a Bloodstone Lance on Hit, up to a maximum of 30 on each target
+--------
+"My people? I'm not doing this for them.
+They belong to me. They want this for me.
+Their sacrifice is a gift they give out of love
+and adoration... I deserve it. I am their Queen."
+--------
+Corrupted

@@ -1,0 +1,20 @@
+Item Class: Rings
+Rarity: Rare
+Brood Twirl
+Breach Ring
+--------
+Quality (Fire Modifiers): +40% (augmented)
+--------
+Requires: Level 60
+--------
+Item Level: 82
+--------
+Maximum Quality is 40% (implicit)
+--------
+Adds 16 to 26 Physical Damage to Attacks
+Adds 35 to 57 Fire damage to Attacks
++172 to Evasion Rating
+17% increased Rarity of Items found
++12% to all Elemental Resistances
++15% to Lightning and Chaos Resistances (desecrated)
+

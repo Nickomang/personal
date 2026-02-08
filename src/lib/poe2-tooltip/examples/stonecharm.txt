@@ -1,0 +1,20 @@
+Item Class: Charms
+Rarity: Magic
+Oceanic Stone Charm of the Brewer
+--------
+Lasts 3 Seconds
+Consumes 14 (augmented) of 40 Charges on use
+Currently has 40 Charges
+Cannot be Stunned
+--------
+Requires: Level 53
+--------
+Item Level: 70
+--------
+Used when you become Stunned (implicit)
+--------
+Recover 186 Mana when Used
+29% reduced Charges per use
+--------
+Used automatically when condition is met. Can only hold charges while in belt. Refill at Wells or by killing monsters.
+

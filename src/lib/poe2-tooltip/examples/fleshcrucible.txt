@@ -1,0 +1,20 @@
+Item Class: Jewels
+Rarity: Unique
+Flesh Crucible
+Diamond
+--------
+Limited to: 1
+--------
+Item Level: 83
+--------
+11% less Spirit (mutated)
+Avatar of Fire (mutated)
+--------
+"Never mind the pain, it's only... making room. Unrelated fact,
+a person can live a normal life with just one kidney. Or just one
+lung. You never know what Vaal technology will cost you..."
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.
+--------
+Corrupted
+

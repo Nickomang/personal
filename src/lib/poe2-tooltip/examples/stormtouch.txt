@@ -1,0 +1,28 @@
+Item Class: Gloves
+Rarity: Rare
+Storm Touch
+Polished Bracers
+--------
+Quality: +25% (augmented)
+Evasion Rating: 566 (augmented)
+--------
+Requires: Level 80, 101 Dex
+--------
+Sockets: S 
+--------
+Item Level: 80
+--------
++1 to Maximum Frenzy Charges (enchant)
+--------
+18% increased Armour, Evasion and Energy Shield (rune)
+--------
++139 to Evasion Rating
+42% increased Evasion Rating
++43 to maximum Life
++37% to Fire Resistance
++29% to Cold Resistance
++32% to Lightning Resistance
+Adds 27 to 43 Fire damage to Attacks (desecrated)
+--------
+Corrupted
+

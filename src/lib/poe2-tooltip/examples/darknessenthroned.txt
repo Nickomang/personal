@@ -1,0 +1,27 @@
+Item Class: Belts
+Rarity: Unique
+Darkness Enthroned
+Fine Belt
+--------
+Requires: Level 62
+--------
+Sockets: S S 
+--------
+Item Level: 84
+--------
+105% reduced effect of Curses on you (rune)
+Prevent +6% of Damage from Deflected Hits (rune)
+--------
+Has 1 Charm Slot (implicit)
+Flasks gain 0.17 charges per Second (implicit)
+--------
+This item gains bonuses from Socketed Items as though it was a Body Armour
+111% increased effect of Socketed Items
+--------
+Kulemak sat triumphant, raising the crown.
+Darkness coiled the world in eternal night.
+Victory, a mere moment, came crashing down.
+No conqueror, no conquered, only searing Light.
+--------
+Corrupted
+

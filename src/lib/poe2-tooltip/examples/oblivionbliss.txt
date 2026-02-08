@@ -1,0 +1,14 @@
+Item Class: Jewels
+Rarity: Rare
+Oblivion Bliss
+Ruby
+--------
+Item Level: 81
+--------
++1% to Maximum Fire Resistance
+19% increased Presence Area of Effect
+14% increased Ignite Magnitude
+13% increased amount of Life Leeched
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.
+

@@ -1,0 +1,25 @@
+Item Class: Helmets
+Rarity: Rare
+Vengeance Cowl
+Ancestral Tiara
+--------
+Quality: +24% (augmented)
+Energy Shield: 554 (augmented)
+--------
+Requires: Level 80, 115 Int
+--------
+Sockets: S 
+--------
+Item Level: 82
+--------
+18% increased Armour, Evasion and Energy Shield (rune)
+--------
++71 to maximum Energy Shield
+130% increased Energy Shield
++31 to maximum Life
++35% to Cold Resistance
+21.8 Life Regeneration per second
++17% to Fire and Chaos Resistances (desecrated)
+--------
+Corrupted
+

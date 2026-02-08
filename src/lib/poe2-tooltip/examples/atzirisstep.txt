@@ -1,0 +1,30 @@
+Item Class: Boots
+Rarity: Unique
+Atziri's Step
+Cinched Boots
+--------
+Quality: +20% (augmented)
+Evasion Rating: 420 (augmented)
+--------
+Requires: Level 65, 86 Dex
+--------
+Sockets: S S 
+--------
+Item Level: 83
+--------
+5% increased Movement Speed (rune)
+18% increased Armour, Evasion and Energy Shield (rune)
+--------
+30% increased Movement Speed
+93% increased Evasion Rating
++99 to maximum Life
+Gain Deflection Rating equal to 55% of Evasion Rating
+Cannot be Light Stunned by Deflected Hits
+25% increased Deflection Rating while moving (mutated)
+--------
+"Those who dance are considered insane
+by those who cannot hear the music."
+- Atziri, Queen of the Vaal
+--------
+Corrupted
+

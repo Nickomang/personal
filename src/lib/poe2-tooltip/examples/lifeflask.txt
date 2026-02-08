@@ -1,0 +1,19 @@
+Item Class: Life Flasks
+Rarity: Magic
+Seething Ultimate Life Flask of the Brewer
+--------
+Quality: +23% (augmented)
+Recovers 566 (augmented) Life over 3 Seconds
+Consumes 7 (augmented) of 75 Charges on use
+Currently has 75 Charges
+--------
+Requires: Level 60
+--------
+Item Level: 80
+--------
+50% reduced Amount Recovered
+Instant Recovery
+29% reduced Charges per use
+--------
+Right click to drink. Can only hold charges while in belt. Refill at Wells or by killing monsters.
+

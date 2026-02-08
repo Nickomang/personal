@@ -1,0 +1,20 @@
+Item Class: Rings
+Rarity: Rare
+Dusk Gyre
+Breach Ring
+--------
+Quality (Fire Modifiers): +40% (augmented)
+--------
+Requires: Level 60
+--------
+Item Level: 78
+--------
+Maximum Quality is 40% (implicit)
+--------
+Adds 17 to 31 Physical Damage to Attacks
+Adds 39 to 63 Fire damage to Attacks
+28% increased Fire Damage
++26 to Intelligence
++51% to Fire Resistance
++19% to all Elemental Resistances (desecrated)
+

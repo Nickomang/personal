@@ -1,0 +1,27 @@
+Item Class: Body Armours
+Rarity: Rare
+Blight Shell
+Slipstrike Vest
+--------
+Quality: +25% (augmented)
+Evasion Rating: 3074 (augmented)
+--------
+Requires: Level 70, 78 (augmented) Dex
+--------
+Sockets: S S S 
+--------
+Item Level: 82
+--------
+3% additional Physical Damage Reduction (enchant)
+--------
+54% increased Armour, Evasion and Energy Shield (rune)
+--------
++322 to Evasion Rating
+40% increased Evasion Rating
+35% reduced Attribute Requirements
++29% to Lightning Resistance
++180 to Stun Threshold
+110% increased Evasion Rating (desecrated)
+--------
+Corrupted
+

@@ -1,0 +1,23 @@
+Item Class: Amulets
+Rarity: Unique
+Fireflower
+Solar Amulet
+--------
+Quality (Fire Modifiers): +20% (augmented)
+--------
+Requires: Level 52
+--------
+Item Level: 81
+--------
+Allocates Cremation (enchant)
+--------
++11 to Spirit (implicit)
+--------
+11% increased Rarity of Items found
+34% increased Mana Regeneration Rate
+Take 120 Fire Damage when you Ignite an Enemy
++4 to Level of all Fire Skills
+--------
+Tale-women in training drink of a painful desert fruit.
+Fire, they learn, springs from agony.
+

@@ -1,0 +1,32 @@
+Item Class: Bucklers
+Rarity: Unique
+Sunsplinter
+Array Buckler
+--------
+Block chance: 20%
+Evasion Rating: 338 (augmented)
+--------
+Requires: Level 55, 78 Dex
+--------
+Sockets: S 
+--------
+Item Level: 82
+--------
++14% to Cold Resistance (rune)
+--------
+Grants Skill: Parry
+--------
+256% increased Evasion Rating
++3% to Maximum Fire Resistance
++1% to Maximum Cold Resistance
++2% to Maximum Lightning Resistance
++1 to Level of all Cold Skills
++2 to Level of all Fire Skills
++4 to Level of all Lightning Skills
+--------
+"Lundara held back the hordes, while Solerai rose to split the sky.
+With a single stroke, she ended the Winter of the World."
+- Wranga, tale-woman of the Wahida akhara
+--------
+Corrupted
+
