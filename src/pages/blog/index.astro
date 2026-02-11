@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const posts = await getCollection("blog");
-const sortedPosts = posts.sort(
+
+const filteredPosts = posts.filter((post) => import.meta.env.PROD ? post.data.draft !== true : true);
+const sortedPosts = filteredPosts.sort(
   (a, b) => a.data.pubDate - b.data.pubDate
 );
 
